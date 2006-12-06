@@ -1,0 +1,4 @@
+glmc                    Fitting Generalised Linear Models Subject to
+                        Population Constraints
+glmc.control            Auxiliary for Controlling GLM Fitting with
+                        population level constraints.
