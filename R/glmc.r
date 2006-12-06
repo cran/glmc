@@ -121,7 +121,7 @@ glmc <- function (formula,
 
 
       if(fit$converged!=TRUE||fit$boundary!=FALSE){
-      print(tstart)
+      
       v2 <- optim(t, glmc.inner2,
                 method=optim.method,
                 control=control$optim.control,
