@@ -19,6 +19,6 @@
 \details{
   Most of these are not to be called by the user. 
 }
-}
+
 \seealso{glmc-package}
 \keyword{internal}

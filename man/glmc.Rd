@@ -22,21 +22,6 @@ glmc(formula,family = gaussian, data, na.action,
      model = TRUE,glm.method= "glm.fit",optim.method="Nelder-Mead",
      emplik.method="Owen",optim.hessian=FALSE,x = FALSE, y = TRUE,
      Amat=NULL, confn=NULL,\dots) 
-
-%glmc(formula, family = gaussian, data, weights = NULL, subset = NULL,
-%    na.action, start = NULL, etastart = NULL, mustart = NULL,
-%    offset = NULL, control = glmc.control(\dots), model = TRUE,
-%    method = "glm.fit", x = FALSE, y = TRUE, contrasts = NULL,
-%    Amat=NULL,confn=NULL
-%    \dots)
-
-%glmc.fit(x, y, weights = rep(1, nobs),
-%        start = NULL, etastart = NULL, mustart = NULL,
-%        offset = rep(0, nobs), family = gaussian(),
-%        control = glmc.control(), intercept = TRUE,
-%        Amat=NULL)
-
-%\method{weights}{glmc}(object, type = c("prior", "working"), \dots)
 }
 \arguments{
   \item{formula}{a symbolic description of the model to be fit.
@@ -212,16 +197,13 @@ glmc(formula,family = gaussian, data, na.action,
 %  the total numbers of cases (factored by the supplied case weights) and
 %  the component \code{y} of the result is the proportion of successes.
 }
-\seealso{
- % \code{\link{anova.glmc}}, \code{\link{summary.glmc}}, etc. for
-  \code{glmc} methods,
-  and the generic functions \code{\link{anova}}, \code{\link{summary}},
-  \code{\link{effects}}, \code{\link{fitted.values}},
-  and \code{\link{residuals}}. \code{\link{optim}}, \code{\link[emplik]{el.test}}, the fitting procedure used by \code{\link{glmc}}. Further, \code{\link{lm}} for non-generalised \emph{linear} models.
+%\seealso{
+% \code{\link{anova.glmc}}, \code{\link{summary.glmc}}, etc. for
+%  \code{glmc} methods,
+%  and the generic functions \code{\link{anova}}, \code{\link{summary}},
+%  \code{\link{effects}}, \code{\link{fitted.values}},
+%  and \code{\link{residuals}}. \code{\link{optim}}, \code{\link[emplik]{el.test}}, the fitting procedure used by \code{\link{glmc}}. Further, \code{\link{lm}} for non-generalised \emph{linear} models.}
 
-%  \code{\link{esoph}}, \code{\link{infert}} and
-%  \code{\link{predict.glmc}} have examples of fitting binomial glms.
-}
 \author{
   The \R implementation of \code{glmc} is written by Sanjay Chaudhuri
   and Mark S Handcock at National University of Singapore and University of Washington, Seattle respectively.

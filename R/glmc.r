@@ -94,7 +94,7 @@ glmc <- function (formula,
         fit$y <- NULL
         fit$hessian<-NULL
       fit <- c(fit, list(call = call, formula = formula, terms = mt, 
-        data = data, offset = offset, control = control$glm.control, method = method, 
+        data = data, offset = offset, control = control$glm.control, glm.method = glm.method, 
         contrasts = attr(X, "contrasts"), xlevels = glmc.getXlevels(mt,mf)))
       class(fit) <- c("glm", "lm")
     
