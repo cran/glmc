@@ -191,7 +191,8 @@ v2 <- optim(tstart, glmc.inner2,
 
       if(optim.hessian==TRUE){
       fit$hessian=(-1)*solve(v2$hessian)}else{
-      Z<-t(t(X)*diag(as.array(family$mu.eta(eta)/family$variance(mu))))
+      #Z<-t(t(X)*diag(as.array(family$mu.eta(eta)/family$variance(mu))))
+      Z<-X*drop(family$mu.eta(eta)/family$variance(mu))
       G<-t(Z*c(family$variance(mu)*final.weights))%*%Z
       G2<-t(Z*c(((Y-mu)*final.weights)^2))%*%Z
       Tv<-t(Z*c((Y-mu)*final.weights))%*%(Amat*c(scale))

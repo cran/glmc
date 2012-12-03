@@ -10,7 +10,7 @@ print.summary.glmc <-
 	x$deviance.resid <- quantile(x$deviance.resid,na.rm=TRUE)
 	names(x$deviance.resid) <- c("Min", "1Q", "Median", "3Q", "Max")
     }
-    print.default(x$deviance.resid, digits=digits, na = "", print.gap = 2)
+    print.default(x$deviance.resid, digits=digits, na.print = "", print.gap = 2)
 
     if(length(x$aliased) == 0) {
         cat("\nNo Coefficients\n")
@@ -56,7 +56,7 @@ print.summary.glmc <-
 	if(p > 1) {
 	    cat("\nCorrelation of Coefficients:\n")
 	    if(is.logical(symbolic.cor) && symbolic.cor) {# NULL < 1.7.0 objects
-		print(symnum(correl, abbr.col = NULL))
+		print(symnum(correl, abbr.colnames = NULL))
 	    } else {
 		correl <- format(round(correl, 2), nsmall = 2, digits = digits)
 		correl[!lower.tri(correl)] <- ""
