@@ -1,8 +1,6 @@
-print.summary.glmc <-
-    function (x, digits = max(3, getOption("digits") - 3),
+print.summary.glmc <- function (x, digits = max(3, getOption("digits") - 3),
 	      symbolic.cor = x$symbolic.cor,
-	      signif.stars = getOption("show.signif.stars"), ...)
-{
+	      signif.stars = getOption("show.signif.stars"), ...){
     cat("\nCall:\n")
     cat(paste(deparse(x$call), sep="\n", collapse="\n"), "\n\n", sep="")
     cat("Deviance Residuals: \n")
@@ -73,7 +71,9 @@ print.summary.glmc <-
 
 coef.glmc <- function(object, ...) object$coefficients
 deviance.glmc <- function(object, ...) object$deviance
+
 effects.glmc <- function(object, ...) object$effects
+
 fitted.glmc <- function(object, ...)
 {
     if(is.null(object$na.action)) object$fitted.values
@@ -82,8 +82,7 @@ fitted.glmc <- function(object, ...)
 
 family.glmc <- function(object, ...) object$family
 
-residuals.glmc <-
-    function(object,
+residuals.glmc <- function(object,
 	     type = c("deviance", "pearson", "working", "response", "partial"),
 	     ...)
 {

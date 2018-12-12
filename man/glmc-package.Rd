@@ -20,10 +20,8 @@ When publishing results obtained using this package the original authors
 are to be cited as:
 
 Mark S. Handcock, Sanjay Chaudhuri, and Michael S. Rendall. 2004 
-\emph{glmc: An R package for generalized linear models subject to constraints}
+\emph{glmc: An R package for generalized linear models subject to constraints}.
 \cr
-\url{http://www.stat.washington.edu/handcock/combining}.
-
 All programs derived from this package must cite it.
 For complete citation information, use\cr
 \code{citation(package="glmc")}.
@@ -49,15 +47,15 @@ two-step algorithm that produces parameter estimates
 using only unconstrained estimation.
 We also provide computable expressions for the standard errors.
 
-For detailed information on how to download and install the software,
-go to the \code{\link{glmc}} website:
-\url{http://http://www.stat.washington.edu/handcock/combining}.
+%For detailed information on how to download and install the software,
+%go to the \code{\link{glmc}} website:
+%\url{http://http://www.stat.washington.edu/handcock/combining}.
 %A tutorial, support newsgroup, references and links to further resources are provided there.
 }
 \author{
-Mark S. Handcock \email{handcock@stat.washington.edu},\cr
+Mark S. Handcock \email{handcock@stat.ucla.edu},\cr
 Sanjay Chaudhuri \email{sanjay@stat.nus.edu.sg}, and\cr
-Michael S. Rendall \email{mrendall@rand.org}
+Michael S. Rendall \email{mrendall@umd.edu}
 
 Maintainer: Mark S. Handcock \email{handcock@stat.washington.edu}
 }
